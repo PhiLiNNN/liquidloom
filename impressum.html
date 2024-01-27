@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./img/logo_color.png">
+    <link rel="stylesheet" href="globalStyle.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="datenschutzImpressum.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="media.css">
+    <script src="includeHTML.js"></script>
+    <script defer src="render.js"></script>
+    <script defer src="hiddenShow.js"></script>
+    <title>Impressum</title>
+</head>
+
+<body onload="includeHTML()">
+    <div class="view_cont">
+
+        <div w3-include-html="./templates/nav.html"></div>
+
+        <div class="content_cont">
+            <section class="impressum">
+                <h1>Impressum</h1>
+                <h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
+                <p>Philipp Wendschuch<br>
+                    Friedrich-Bosse-Straße 49<br>
+                    04159 Leipzig
+                </p>
+                <h2>Kontakt</h2>
+                <p>Telefon: 01627849412<br>
+                    E-Mail: gruppe-816@mail.de
+                </p>
+            </section>
+        </div>
+
+        <div w3-include-html="./templates/footer.html"></div>
+
+    </div>
+</body>
+
+</html>

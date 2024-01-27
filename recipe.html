@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./img/logo_color.png">
+    <link rel="stylesheet" href="globalStyle.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="mainStyle.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="recipe.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="media.css">
+    <script src="includeHTML.js"></script>
+    <script defer src="hiddenShow.js"></script>
+    <script src="render.js"></script>
+    <script src="contact.js"></script>
+    <title>liquid loom</title>
+</head>
+
+<body onload="includeHTML(); render();">
+    <div class="view_cont">
+
+        <div w3-include-html="./templates/nav.html"></div>
+
+        <div class="content_cont">
+            <section class="recipe_page hidden">
+
+                <div id="titelPlusRecipeContainer" class="title_info"></div>
+
+                <div id="shortInfo" class="recipe_shortinfo"></div>
+
+            </section>
+
+            <section class="recipe_page hidden">
+
+                <div class="dot_block">
+                    <span class="dot_above1"></span>
+                    <span class="dot_above2"></span>
+
+                    <div class="recipe_block">
+
+                        <div class=" recipe_card">
+
+                            <div class="recipe_counter_title">
+                                <h2>Zutaten</h2>
+
+                                <div class="recipe_counter">
+                                    <button class="recipe_button_left" type="button" onclick="totalClick(-1)">-</button>
+                                    <span id="totalClicks">1</span>
+                                    <button class="recipe_button_right" type="button" onclick="totalClick(1)">+</button>
+                                    <span>Drink(s)</span>
+                                </div>
+
+                            </div>
+
+                            <div id="table" class="recipe_table"></div>
+
+                            <div id="prep" class="recipe_instruction"></div>
+
+                        </div>
+
+                        <div id="image" class="recipe_picture"></div>
+
+                    </div>
+
+                    <span class="dot_below1"></span>
+                    <span class="dot_below2"></span>
+
+                    <div id="author" class="recipe_author"></div>
+
+                </div>
+
+            </section>
+        </div>
+
+        <div w3-include-html="./templates/footer.html"></div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./img/logo_color.png">
+    <link rel="stylesheet" href="globalStyle.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="datenschutzImpressum.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="media.css">
+    <script src="includeHTML.js"></script>
+    <script defer src="hiddenShow.js"></script>
+    <script defer src="render.js"></script>
+    <script src="contact.js"></script>
+    <title>Kontakt</title>
+</head>
+
+<body onload="includeHTML()">
+    <div class="view_cont">
+
+        <div w3-include-html="./templates/nav.html"></div>
+
+        <div class="container">
+            <div class="content-wrapper impressum">
+
+                <form onsubmit="sendMail(event); return false" novalidate>
+                    <h1 class="contact-h1">Kontakt</h1>
+                    <h2 class="contact-h2">Hast du Fragen oder Anregungen? Schick uns eine Nachricht!</h2>
+                    <div class="name_email_parent">
+                        <div class="label_box name_email">
+                            <label class="label" >Name</label>
+                            <input type="name" name="name" id="name_contact"   minlength="2" required>
+                            <div class="error-space">
+                                <p id="no-name" class=" d-none">Min. 2 Buchstaben, keine Son-<br>derzeichen oder Zahlen</p>
+                            </div>
+                
+                        </div>
+                        <div class="label_box name_email">
+                            <label  class="label">E-Mail</label>
+                            <input type="email" name="email" id="email_contact" required>
+                            <div class="error-space">
+                                <p id="no-mail" class="d-none">Gib eine gültige E-Mail ein <br>(z.B., benutzer@example.com)!</p>
+                            </div>
+                   
+                        </div>
+
+                    </div>
+         
+                    <div class="label_box textarea-width">
+                        <label  class="label">Nachricht</label>
+                        <textarea type="text" name="message" id="message_contact"  maxlength="5000" required></textarea>
+                        <p id="no-text" class="d-none">Gib eine Nachricht ein!</p>
+                       
+                    </div>
+                    <div class="kontakt-buton-error-space">
+                        <button id="button_contact">Senden</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+        <div id="feedback-id" class="feedback-bg d-none"></div>
+    </section>
+
+    <div w3-include-html="./templates/footer.html"></div>
+
+</body>
+
+</html>

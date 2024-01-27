@@ -1,0 +1,95 @@
+footer {
+  color: #efefef;
+  font-size: 16px;
+}
+
+.footer_center {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer_background {
+  margin-top: auto;
+  padding: 100px 0px 50px 0px;
+  height: 150px;
+  background-image: url(./img/footer-bg.svg);
+  background-position-x: 50%;
+  background-position-y: top;
+  background-size: cover;
+}
+
+.style_footer {
+  width: clamp(320px, 50vw, 1200px);
+  display: flex;
+  justify-content: space-between;
+  margin-inline: 15vw;
+}
+
+.social-logos {
+  display: flex;
+  gap: 20px;
+}
+
+.social {
+  width: 34px;
+}
+
+.social:hover {
+  transform: scale(1.05);
+}
+
+footer a {
+  text-decoration: none;
+  color: #efefef;
+}
+
+.footer-title {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 10px;
+}
+
+#email_footer {
+  border: 2px solid #2d2c2c;
+  outline: none;
+  height: 40px;
+  border-radius: 20px;
+  padding-left: 15px;
+  background-color: #fdfdfd;
+  flex: 1;
+}
+
+#email_footer:focus {
+  border: 2px solid #3BA3DE;
+}
+
+::placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+.vertical-line {
+  display: inline-block;
+  border-left: 1px solid #efefef;
+  margin: 0 10px;
+  height: 170px;
+}
+
+.anne_mention {
+  font-size: 12px;
+  color: #A890C4;
+}
+
+.link_anne {
+  color: #A890C4;
+}

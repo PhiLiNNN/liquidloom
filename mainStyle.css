@@ -1,0 +1,186 @@
+/* -----------------------CocktailOfTheWeek------------------------------------------------ */
+
+.cocktailOfTheWeek-container {
+  margin-top: calc(107.8px + 64px);
+  /* height of header + default margin*/
+  display: flex;
+  align-items: center;
+  /* gap: 32px; */
+}
+
+.cocktailOfTheWeek-left-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.cocktailOfTheWeek-right-container {
+  width: 50%;
+  margin-left: 2%;
+  text-wrap: balance;
+}
+
+.cocktailOfTheWeek-left-container span {
+  font-size: 10px;
+  color: #efefef;
+ 
+ 
+  padding-left: 2px;
+}
+
+.cocktailOfTheWeekImg {
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 16px;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  /* VERZÖGERUNG */
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.cocktailOfTheWeek-left-container a {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.cocktailOfTheWeek-left-container a img:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+
+/* -----------------------Cocktails------------------------------------------------ */
+.recipeSection {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.subHeadlineLeftSide {
+  display: flex;
+  /* margin-right: 985px; */
+}
+
+.recipeImages-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.recipeRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: -30px;
+}
+
+.recipeWrap {
+  display: flex;
+  flex-basis: 25%;
+}
+
+.recipe_marg {
+  margin-right: 30px;
+}
+
+.recipe {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 64px;
+  color: rgb(0, 0, 0);
+}
+
+.recipeLink {
+  border-radius: 16px;
+  aspect-ratio: 2/3;
+  /* height: 384px;
+  width: 256px; */
+  overflow: hidden;
+}
+
+.recipeImg {
+  width: 100%;
+  height: auto;
+  /* SCALE */
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  /* VERZÖGERUNG */
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.recipeLink img:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.recipeAtributs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-left: 14px;
+  padding-top: 16px;
+  font-size: 14px;
+}
+
+.alk {
+  background-color: #A890C4e7;
+  padding: 6px;
+  border-radius: 50px;
+  color: white;
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+.alk2 {
+  background-color: #3BA3DEe7;
+  padding: 6px;
+  border-radius: 50px;
+  color: white;
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+.vegi {
+  background-color: #D76BA5e7;
+  padding: 6px;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+}
+
+.recipe h3 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.recipeUser {
+  padding-top: 8px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}

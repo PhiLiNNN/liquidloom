@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./img/logo_color.png">
+    <link rel="stylesheet" href="globalStyle.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="mainStyle.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="media.css">
+    <script src="includeHTML.js"></script>
+    <script defer src="hiddenShow.js"></script>
+    <script defer src="render.js"></script>
+    <script src="contact.js"></script>
+    <title>liquid loom</title>
+</head>
+
+<body onload="includeHTML()">
+    <div class="view_cont">
+        
+        <div w3-include-html="./templates/nav.html"></div>
+        
+
+        <div class="content_cont">
+            <section class="hidden">
+
+                <div class="cocktailOfTheWeek-container">
+
+                    <div class="cocktailOfTheWeek-left-container">
+                        <a onclick="recipe('winter_spice_mule')" href="recipe.html">
+                            <img class="cocktailOfTheWeekImg" src="./img/cocktailsImg/pumpkin_spice_mule.png" alt="">
+                        </a>
+                        <span>Photo: Rachel Vanni; Food Styling: Brooke Caison</span>
+                    </div>
+
+                    <div class="cocktailOfTheWeek-right-container">
+                        <h2>Cocktail der Woche</h2>
+                        <h4>Winter Spice Mule</h4>
+                        <span>Winter Spiced Elegance - Unser "Winter Spice Mule" ist die perfekte Mischung aus
+                            Ingwerbier,
+                            Zimt,
+                            Orangen und Wodka. Ein cooler Kick für deine Winterabende! Tauche ein in den festlichen
+                            Zauber
+                            und
+                            genieße jeden Schluck dieses einzigartigen Mixes. Cheers to winter vibes!</span>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="hidden">
+
+                <div class="recipeSection">
+
+                    <div class="subHeadlineLeftSide hidden">
+                        <h2>Rezepte</h2>
+                    </div>
+
+                    <div class="recipeImages-container">
+
+                        <div class="recipeRow hidden">
+                            <div class="recipeWrap">
+                                <div class="recipe_marg">
+                                    <div class="recipe">
+                                        <a onclick="recipe('himbeer_mint')" href="recipe.html" class="recipeLink">
+
+                                            <img src="./img/cocktailsImg/himbeer_mint.jpg" alt="Himbeer-Mint-Spritzer"class="recipeImg">
+
+                                        </a>
+
+                                        <div class="recipeAtributs">
+                                            <span class="alk">alkoholfrei</span>
+                                        </div>
+                                        <h3>Himbeer-Mint-Spritzer</h3>
+
+                                        <div class="recipeUser">
+
+                                            <div>
+                                                <img src="./img/jatina.png" alt="Profilbild" class="profilpic">
+                                            </div>
+
+                                            <div>
+                                                <span class="recipeUsername">Jatina S.</span>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="recipeWrap">
+                                <div class="recipe_marg">
+                                    <div class="recipe">
+                                        <a onclick="recipe('margarita')" href="recipe.html" class="recipeLink">
+                                            <img src="./img/cocktailsImg/margarita.jpg" alt="Margarita"
+                                                class="recipeImg">
+                                        </a>
+
+                                        <div class="recipeAtributs">
+                                            <span class="alk2">alkoholisch</span>
+                                        </div>
+                                        <h3>Margarita</h3>
+
+                                        <div class="recipeUser">
+
+                                            <div>
+                                                <img src="./img/philipp.png" alt="Profilbild" class="profilpic">
+                                            </div>
+
+                                            <div>
+                                                <span class="recipeUsername">Philipp W.</span>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="recipeWrap">
+                                <div class="recipe_marg">
+                                    <div class="recipe">
+                                        <a onclick="recipe('virgin_mojito')" href="recipe.html" class="recipeLink">
+                                            <img src="./img/cocktailsImg/virgin_mojito.jpg" alt="Virgin Mojito"
+                                                class="recipeImg">
+                                        </a>
+
+                                        <div class="recipeAtributs">
+                                            <span class="alk">alkoholfrei</span>
+                                        </div>
+                                        <h3>Virgin Mojito</h3>
+
+                                        <div class="recipeUser">
+
+                                            <div>
+                                                <img src="./img/silas.png" alt="Profilbild" class="profilpic">
+                                            </div>
+
+                                            <div>
+                                                <span class="recipeUsername">Silas V.</span>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="recipeWrap">
+                                <div class="recipe_marg">
+                                    <div class="recipe">
+                                        <a onclick="recipe('vegan_pina_colada')" href="recipe.html" class="recipeLink">
+                                            <img src="./img/cocktailsImg/pina_colada.jpg" alt="" class="recipeImg">
+                                        </a>
+
+                                        <div class="recipeAtributs">
+                                            <span class="vegi">vegan</span>
+                                        </div>
+                                        <h3>Vegan Piña Colada</h3>
+
+                                        <div class="recipeUser">
+
+                                            <div>
+                                                <img src="./img/philipp.png" alt="Profilbild" class="profilpic">
+                                            </div>
+
+                                            <div>
+                                                <span class="recipeUsername">Philipp W.</span>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="recipeWrap">
+                                <div class="recipe_marg">
+                                    <div class="recipe">
+                                        <a onclick="recipe('erdbeer_basilikum_limonade')" href="recipe.html"
+                                            class="recipeLink">
+                                            <img src="./img/cocktailsImg/erdbeer_basil.jpg"
+                                                alt="Erdbeer-Basilikum-Limonade" class="recipeImg">
+                                        </a>
+
+                                        <div class="recipeAtributs">
+                                            <span class="alk">alkoholfrei</span>
+                                        </div>
+                                        <h3>Erdbeer-Basilikum-Limonade</h3>
+
+                                        <div class="recipeUser">
+
+                                            <div>
+                                                <img src="./img/jatina.png" alt="Profilbild" class="profilpic">
+                                            </div>
+
+                                            <div>
+                                                <span class="recipeUsername">Jatina S.</span>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="recipeWrap">
+                                <div class="recipe_marg">
+                                    <div class="recipe">
+                                        <a onclick="recipe('moscow_mule')" href="recipe.html" class="recipeLink">
+                                            <img src="./img/cocktailsImg/moscow_mule.jpg" alt="Moscow Mule"
+                                                class="recipeImg">
+                                        </a>
+
+                                        <div class="recipeAtributs">
+                                            <span class="alk2">alkoholisch</span>
+                                        </div>
+                                        <h3>Moscow Mule</h3>
+
+                                        <div class="recipeUser">
+
+                                            <div>
+                                                <img src="./img/silas.png" alt="Profilbild" class="profilpic">
+                                            </div>
+
+                                            <div>
+                                                <span class="recipeUsername">Silas V.</span>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="recipeWrap">
+                                <div class="recipe_marg">
+                                    <div class="recipe">
+                                        <a onclick="recipe('kokosnuss_ananas_smoothie')" href="recipe.html"
+                                            class="recipeLink">
+                                            <img src="./img/cocktailsImg/kokos_smoothie.jpg"
+                                                alt="Kokosnuss-Ananas-Smoothie" class="recipeImg">
+                                        </a>
+
+                                        <div class="recipeAtributs">
+                                            <span class="alk">alkoholfrei</span>
+                                        </div>
+                                        <h3>Kokosnuss-Ananas-Smoothie</h3>
+
+                                        <div class="recipeUser">
+
+                                            <div>
+                                                <img src="./img/philipp.png" alt="Profilbild" class="profilpic">
+                                            </div>
+
+                                            <div>
+                                                <span class="recipeUsername">Philipp W.</span>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="recipeWrap">
+                                <div class="recipe_marg">
+                                    <div class="recipe">
+                                        <a onclick="recipe('klassischer_mojito')" href="recipe.html" class="recipeLink">
+                                            <img src="./img/cocktailsImg/mojito.jpg" alt="Klassischer Mojito (vegan)"
+                                                class="recipeImg">
+                                        </a>
+
+                                        <div class="recipeAtributs">
+                                            <span class="vegi">vegan</span>
+                                        </div>
+                                        <h3>Klassischer Mojito (vegan)</h3>
+
+                                        <div class="recipeUser">
+
+                                            <div>
+                                                <img src="./img/jatina.png" alt="Profilbild" class="profilpic">
+                                            </div>
+
+                                            <div>
+                                                <span class="recipeUsername">Jatina S.</span>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="recipeWrap">
+                                <div class="recipe_marg">
+                                    <div class="recipe">
+                                        <a onclick="recipe('basilikum_spritzer')" href="recipe.html" class="recipeLink">
+                                            <img src="./img/cocktailsImg/blaubeer_spritz.jpg"
+                                                alt="Blaubeer-Basilikum-Spritzer" class="recipeImg">
+                                        </a>
+                                        <div class="recipeAtributs">
+                                            <span class="vegi">vegan</span>
+                                        </div>
+                                        <h3>Blaubeer-Basilikum-Spritzer</h3>
+
+                                        <div class="recipeUser">
+
+                                            <div>
+                                                <img src="./img/silas.png" alt="Profilbild" class="profilpic">
+                                            </div>
+
+                                            <div>
+                                                <span class="recipeUsername">Silas V.</span>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="recipeWrap">
+                                <div class="recipe_marg">
+                                    <div class="recipe">
+                                        <a onclick="recipe('limetten_zitronen_tee')" href="recipe.html"
+                                            class="recipeLink">
+                                            <img src="./img/cocktailsImg/limette_ingwer.jpg" alt="Limetten-Zitronen-Tee"
+                                                class="recipeImg">
+                                        </a>
+
+                                        <div class="recipeAtributs">
+                                            <span class="alk">alkoholfrei</span>
+                                        </div>
+                                        <h3>Limetten-Zitronen-Tee</h3>
+
+                                        <div class="recipeUser">
+
+                                            <div>
+                                                <img src="./img/philipp.png" alt="Profilbild" class="profilpic">
+                                            </div>
+
+                                            <div>
+                                                <span class="recipeUsername">Philipp W.</span>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="recipeWrap">
+                                <div class="recipe_marg">
+                                    <div class="recipe">
+                                        <a onclick="recipe('whiskey_sour')" href="recipe.html" class="recipeLink">
+                                            <img src="./img/cocktailsImg/whiskey_sour.jpg" alt="Whiskey Sour"
+                                                class="recipeImg">
+                                        </a>
+
+                                        <div class="recipeAtributs">
+                                            <span class="alk2">alkoholisch</span>
+                                        </div>
+                                        <h3>Whiskey Sour</h3>
+
+                                        <div class="recipeUser">
+
+                                            <div>
+                                                <img src="./img/silas.png" alt="Profilbild" class="profilpic">
+                                            </div>
+
+                                            <div>
+                                                <span class="recipeUsername">Silas V.</span>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="recipeWrap">
+                                <div class="recipe_marg">
+                                    <div class="recipe">
+                                        <a onclick="recipe('negroni')" href="recipe.html" class="recipeLink">
+                                            <img src="./img/cocktailsImg/negroni.jpg" alt="Negroni" class="recipeImg">
+                                        </a>
+
+                                        <div class="recipeAtributs">
+                                            <span class="alk2">alkoholisch</span>
+                                        </div>
+                                        <h3>Negroni</h3>
+
+                                        <div class="recipeUser">
+
+                                            <div>
+                                                <img src="./img/jatina.png" alt="Profilbild" class="profilpic">
+                                            </div>
+
+                                            <div>
+                                                <span class="recipeUsername">Jatina S.</span>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div w3-include-html="./templates/footer.html"></div>
+
+    </div>
+</body>
+
+</html>

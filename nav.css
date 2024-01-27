@@ -1,0 +1,215 @@
+@font-face {
+    font-family: 'arista';
+    src: url('./webfonts/arista-2.0/arista2.0-webfont.ttf') format('truetype');
+}
+
+.navbar {
+    width: 4rem;
+    height: 65vh;
+    left: 3.5%;
+    top: 20%;
+    border-radius: 48px;
+    background: linear-gradient(135deg, #D76BA5, #A890C4 , #3BA3DE);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    z-index: 999;
+    transition: width 300ms ease;
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+
+.stars {
+    margin-right: 8px;
+}
+
+
+.nav-item {
+    width: 100%;
+}
+
+.nav-item:last-child {
+    margin-top: auto;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 5rem;
+    color: #171a1b;
+    text-decoration: none; 
+    text-align: center; 
+    margin-left: 0.5rem;
+    transition: 300ms ease;
+    font-size: 24px;
+    font-weight: 500;
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-item .nav-link:hover {
+    font-weight: bold;
+    transform: scale(1.05);
+}
+
+.navbar:hover {
+    width: 21rem;
+}
+
+
+.link-text {
+    width: 65%;
+    margin-left: 1rem;
+    white-space: nowrap; 
+    text-align: center;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.navbar:hover .link-text {
+    opacity: 1;
+    max-height: 100px; 
+}
+
+.nav-link img {
+    width: 2rem;
+    min-width: 2rem;
+    margin: 0 0.5rem;  
+}
+
+.sun-logo {
+    min-width: 3rem !important;
+    margin: 0 !important;
+}
+
+.cotw-logo {
+    min-width: 2.5rem !important;
+    margin: 0 0.3rem !important;
+}
+
+.recipe-logo {
+    min-width: 3.0rem !important;
+    margin: 0 0.0rem !important;
+}
+
+.envelope_logo  {
+    min-width: 2.4rem !important;
+    margin: 0 0.3rem !important;
+}
+
+.balloons-logo {
+    min-width: 3.0rem !important;
+    margin: 0 0.3rem !important;
+}
+
+.stars-logo {
+    min-width: 3.0rem !important;
+    margin: 0 0.3rem !important;
+}
+
+.navlogo {
+    margin-bottom: 1rem;
+    text-align: center;
+    letter-spacing: 0.3ch;
+    width: 100%;
+    
+}
+.navlogo a span {
+    font-size: 36px;
+    font-family: 'arista';
+    opacity: 0;
+}
+
+
+.navlogo img {
+    transform: rotate(0deg);
+    transition: transform 300ms ease;
+}
+
+
+.navbar:hover .navlogo img {
+    transform: rotate(-180deg);
+}
+
+
+.MobilHeader {
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mobile-container {
+    width: 100vw;
+    margin: 0;
+    height: auto;
+    color: white;
+    border-radius: 10px;
+}
+
+.MobilNav {
+    overflow: hidden;
+    width: 100%;
+    position: sticky;
+}
+  
+.MobilNav #myLinks {
+    display: none;
+    background: linear-gradient(135deg, #d76ba590, #a890c490 , #3ba2de90);
+}
+  
+.MobilNav a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+
+}
+  
+
+.MobilNav a:hover {
+    color: #171a1b;
+    font-size: 24px;
+    font-weight: 500;
+    transition: transform 0.3s ease-in-out;
+}
+  
+.MobilNav a:hover {
+    font-weight: bold;
+    transform: scale(1.05);
+}
+
+.mobile-logo a img {
+    width: 2rem;
+    min-width: 2rem;
+    margin: 0 0.5rem;  
+    transform: rotate(0deg);
+    transition: transform 300ms ease;
+}
+
+
+.links-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 160px;
+}
+
+.links-container a {
+    height: 20px;
+}
+
